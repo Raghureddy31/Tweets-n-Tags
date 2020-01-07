@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<head>
+    <title> jQuery</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <p>By Raghu</p>
+    <p> by harsh</p>
+    <script>
+        $(document).ready(function () {
+            $("p:first").click(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+
+    <input id="press" typr="text" size="10" /><br /><br />
+    <script>
+        $(document).ready(function () {
+            $("input").on("keypress", function () {
+                $("p:last").hide();
+            });
+        });
+    </script>
+
+
+    <label for="date1">date</label><br />
+    <input type="text" id="date_picker"<br /><br />
+    <script>
+        $(function () {
+            $("#date_picker").datepicker();
+        });
+    </script>
+
+
+    </html>
+</body>
+</html>
